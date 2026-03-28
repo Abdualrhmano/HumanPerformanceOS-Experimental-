@@ -12,7 +12,7 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 
 # Security Configuration
-SECRET_KEY = os.getenv SECRET_KEY = os.getenv("SECRET_KEY", b"1Xt5YfM4ZNuFdwp3OfVkwkhhQLagWKtt") # 32 bytes exactly"
+SECRET_KEY = os.getenv ("SECRET_KEY", b"1Xt5YfM4ZNuFdwp3OfVkwkhhQLagWKtt") # 32 bytes exactly"
 API_KEYS = {"demo-key": "user1"}  # In production, use env or DB
 
 # Rate Limiter
